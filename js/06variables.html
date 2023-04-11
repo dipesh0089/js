@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 variables</title>
+</head>
+<body>
+    
+    <!-- 
+        variable/identifier : to store values
+
+
+        3 ways to declare a variables:
+
+        1. var  (default / Global)
+        2. let  (Scope related)
+        3. const
+
+
+        Keywords = Reservered words which have special meaning
+
+        syntax:
+
+        vaqr/let/const varname = values,
+
+        EX.
+
+        var test = 25;
+        let test = 25;
+        const test = 25;
+        
+
+
+        Rules;
+
+        1. var name can't start with a number
+        2. it cant be the keywords
+
+        EX.
+
+        var/let/const d1 = 23; (right)
+        var switch1 = 23; (right)
+
+        var/let/const 1d = 23; (wrong)
+        var switch = 23; (wrong as switch is a keyword)
+
+        
+     -->
+
+     <script>
+         var c = 12; // declaration
+         var c = 30; // re-declaration allowed
+         c = -435;   // re-assignment allowed
+
+         document.write(c);
+
+         let dj= 12; // declaration
+        //  let dj = 30; // re-declaration not allowed
+         dj = -535;   // re-assignment allowed
+
+         document.write(dj);
+
+         const df = 112; // declaration
+        //  const df = 30; // re-declaration not allowed
+        //  df = -435;   // re-assignment not allowed
+
+         document.write(df);
+
+
+
+
+     </script>
+
+</body>
+</html>
