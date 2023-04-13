@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17 applyCSS</title>
+    <style>
+        .xt
+        {
+            height: 100px;
+            width: 150px;
+            background: linear-gradient(green,lightblue);
+            color: orangered;
+            font-size: 22px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="e">heading line css</h1>
+
+    <h2 id="w">test internal css</h2>
+
+    <script>
+
+        h1 = document.getElementById("e");
+
+        h2 = document.getElementById("w");
+
+        //varname.style.property="value"
+
+        h1.style.color = "blue";
+        h1.style.height = "200px";
+        h1.style.width = "200px";
+        h1.style.background = "lightgreen";
+        h1.style.fontSize = "25px"
+        console.log(h1);
+
+
+        h2.classList.add("xt");
+        console.log(h2);
+
+        h2.classList.remove("xt");
+        console.log(h2);
+
+        h2.classList.add("xt");
+        console.log(h2);
+
+
+
+    </script>
+    
+</body>
+</html>

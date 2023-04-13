@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21 add remove toggle css</title>
+    <style>
+        .dj
+        {
+            color: blueviolet;
+            background: coral;
+        }
+        .g
+        {
+            display: none;
+        }
+        .y 
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <p id=dk>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque assumenda magni quos porro possimus amet cum, voluptatibus quis quasi maxime dolores accusamus quidem placeat saepe aspernatur ut accusantium. Facere, explicabo.
+
+        <h1 id="f">Dipesh</h1>
+        
+
+    </p>
+
+    <button onclick="addcss()">add css</button>
+    <button onclick="remove()">remove</button>
+    <button onclick="addremovecss()">add remove css</button>
+
+    <button onclick="test()">test togle class</button>
+    
+
+
+    <script>
+
+        p = document.getElementById("dk");
+        h1 = document.getElementById("f")
+    
+
+        function addcss()
+        {
+            p.classList.add("dj");
+        }
+
+        function remove()
+        {
+            p.classList.remove("dj");
+        }
+
+        function addremovecss()
+        {
+            p.classList.toggle("dj");
+        }
+
+
+
+        function test()
+        {
+            h1.classList.toggle("g");
+        }
+
+
+    </script>
+</body>
+</html>

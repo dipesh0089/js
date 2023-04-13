@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change text onclick</title>
+</head>
+<body>
+
+    <h1 id="a">dfgl;lg</h1>
+    <button onclick="test()">click me</button>
+
+    <p onclick="test()">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum delectus rem quaerat vitae nam doloremque mollitia corrupti quod, totam dignissimos. Omnis tempora dolorem minima molestiae debitis, ullam aperiam dolore.
+    </p> 
+    
+
+    <script>
+
+        h1 = document.getElementById("a")
+        
+        function test()
+        {
+            h1.innerHTML = "heading2";
+        }
+        
+    </script>
+    
+</body>
+</html>
