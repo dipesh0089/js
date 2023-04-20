@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>35 form_validation_wid_para</title>
+</head>
+<body>
+
+    Name: <input type="text" id="nm" onblur="validateform(nm,nmErr)">
+    
+    <span id="nmErr"></span>
+    <br><br>
+
+
+    Mobile: <input type="text" id="mb" onblur="validateform(mb,mbErr)">
+    <span id="mbErr"></span>
+    <br><br>
+
+
+    <script>
+
+        function validateform(e,spid)
+        {
+            console.log(e)
+            console.log(e.value)
+
+            if(e.value="")
+            {
+                spid.innerHTML = "*required...!";
+                spid.style.color="red";
+                e.style.border="2px solid red";
+            }
+
+            else 
+            {
+                spId.innerHTML = "";
+                e.style.border="2px solid green";
+            }
+        }
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32 simple-calci</title>
+</head>
+<body>
+
+    num1: <input type="text" id="n1"><br><br>
+    num2: <input type="text" id="n2"><br><br>
+
+    <h2 id="res"></h2>
+
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <button onclick="mod()">%</button>
+
+    
+
+
+    <script>
+
+        no1 = document.getElementById("n1");
+        no2 = document.getElementById("n2");
+        result = document.getElementById("res");
+
+        function add()
+        {
+            console.log(no1)
+            console.log(no1.value)
+
+            result.innerHTML = Number(no1.value) + Number(no2.value);
+            // result.innerHTML = parseInt(no1.value) + parseInt(no2.value);
+            
+        }
+
+        function sub()
+        {
+            result.innerHTML = parseInt(no1.value) - parseInt(no2.value);
+        }
+
+        function mul()
+        {
+            result.innerHTML = Number(no1.value) * Number(no2.value);
+        }
+
+        function div()
+        {
+            result.innerHTML = Number(no1.value) / Number(no2.value);
+        }
+
+        function mod()
+        {
+            result.innerHTML = Number(no1.value) % Number(no2.value);
+        }
+
+
+    </script>
+
+</body>
+</html>
