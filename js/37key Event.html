@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>37 key Event</title>
+</head>
+<body>
+
+    <!-- <input type="text" id="inp" onkeypress="getvalue()"> -->
+    <!-- <input type="text" id="inp" onkeydown="getvalue()"> -->
+    <input type="text" id="inp" onkeyup="getvalue()">
+
+
+    <textarea id="txt"></textarea>
+
+    <script>
+
+        input = document.getElementById('inp');
+        taxt_tag = document.getElementById('txt');
+
+
+        function getvalue()
+        // function getValue()
+        {
+            taxt_tag.innerHTML = input.value;
+            
+        }
+
+    </script>
+
+     
+
+     
+    
+</body>
+</html>

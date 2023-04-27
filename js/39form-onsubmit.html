@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39 form-onsubmit</title>
+</head>
+<body>
+
+    <form action="" onsubmit="validation()">
+
+        <input type="text" name="" id="ip">
+        <input type="submit" name="">
+
+    </form>
+
+    <script>
+
+        np = document.getElementById('ip');
+
+        function validation()
+        {
+            if(np.value=="")
+            {
+                alert("required....")
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
