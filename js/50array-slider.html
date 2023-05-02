@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 array-slider</title>
+
+    <style>
+
+        div
+        {
+            overflow: hidden;
+        }
+        .df
+        {
+            animation: zoom 1s;
+        }
+        @keyframes zoom
+        {
+            from{transform: scale(1)}
+            to{transform: scale(1.2)}
+        }
+
+    </style>
+</head>
+<body>
+
+   <div>
+    <img src="image/1.jpeg" alt="" class="v" height="450px" width="100%">
+
+    <img src="image/2.jpg" alt="" class="v" height="450px" width="100%">
+    
+    <img src="image/3.jpg" alt="" class="v" height="450px" width="100%">
+    
+    <img src="image/4.jpg" alt="" class="v" height="450px" width="100%">
+
+    <img src="image/3.jpg" alt="" class="v" height="450px" width="100%">
+   </div>
+
+
+    <script>
+
+        index=0;
+
+        function slider()
+        {
+            // images = document.getElementsByClassName('v');
+
+            images = document.getElementsByTagName('img');
+
+            // console.log(images);
+            // images[4].style.display = "none";
+
+            for(i=0;i<images.length;i++)
+            {
+                images[i].style.display = "none";
+            }
+
+            images[index].style.display = "block";
+            images[index].classList.add("df");
+            index++;
+
+
+            if(index==images.length)
+            {
+                index=0;
+            }
+
+            setTimeout("slider()",1000)
+
+        }
+        slider()
+
+
+        
+    </script>
+    
+</body>
+</html>

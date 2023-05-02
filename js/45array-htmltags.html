@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>45 array-htmltags</title>
+</head>
+<body>
+
+    <h2 id="h" class="ge">heal</h2>
+    <h2 id="h" class="ge">heal</h2>
+    <h2 id="h" class="ge">heal</h2>
+    <h2 id="h" class="ge">heal</h2>
+    <h2 id="h" class="ge">heal</h2>
+
+
+    <script>
+
+        h2tag = document.getElementsByClassName('ge');
+
+        console.log(h2tag)
+
+        for(f=0;f<h2tag.length;f++)
+        {
+            h2tag[f].style.color = 'orangered';
+        }
+
+    </script>
+    
+</body>
+</html>

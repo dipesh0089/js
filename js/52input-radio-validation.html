@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>52 input-radio-validation</title>
+</head>
+<body>
+
+    gender:
+
+    <input type="radio" name="gender">male
+    <input type="radio" name="gender">female
+
+    <br><br>
+    <input type="submit" onclick="validation()">
+
+    <script>
+
+        gend = document.getElementsByName("gender");
+
+        console.log(gend);
+        // console.log(gend[0].checked);
+
+        function validation()
+        {
+            if(gend[0].checked == false && gend[1].checked==flase)
+            {
+                alert("select gender.....");
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
