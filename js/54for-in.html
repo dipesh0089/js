@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>54 for-in</title>
+</head>
+<body>
+
+    <script>
+
+
+        s = [5,8,546];
+
+        // for(anyname in varname)
+        // {
+
+        // }
+
+        for(any in s)
+        {
+            console.log(any); //indexs
+
+            document.write(s[any] + "<br>");
+        }
+
+        // document.write(a);
+
+        for(c=0;c<s.length;c++)
+
+        {
+            document.write(s[c]+ "<br>");
+        }
+
+        c = 0;
+
+        while(c<s.length)
+        {
+            document.write(s[c] + '<br>');
+            c++;
+        }
+
+        c= 0;
+
+        do
+        {
+            document.write(s[c] + '<br>');
+            c++; 
+        }while(c<s.length);
+
+ 
+
+    </script>
+    
+</body>
+</html>

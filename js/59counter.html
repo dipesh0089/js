@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>59 counter</title>
+</head>
+<body>
+
+    <h2 id="d"></h2>
+
+    <script>
+
+        test = setInterval("count()",10);
+
+        x=0;
+
+        h1 = document.getElementById('d');
+
+        function count()
+        {
+            h1.innerHTML = ++x;//100
+           if(x==100)
+           {
+            clearInterval(test);
+           }
+        }
+
+        
+    </script>
+    
+</body>
+</html>
