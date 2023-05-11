@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>67 switchcal</title>
+</head>
+<body>
+
+    <input type="text" id="inp"  name="" onkeyup="getvalue()">
+    <h1 id="result"></h1>
+
+    <script>
+
+        input = document.getElementById("inp");
+        res = document.getElementById("result");
+
+        function getvalue()
+        {
+            choice=Number(input.value);//1
+            // choice=parseInt(input.value);//1
+            // choice=parseFloat(input.value);//1
+
+            switch(choice)
+            {
+                case 1: result.innerHTML=("case1...!");
+                break;
+
+                case 2: result.innerHTML=("case2...!");
+                break;
+
+                case 3: result.innerHTML=("case3...!");
+                break;
+
+                case 4: result.innerHTML=("case4...!");
+                break;
+
+                default: result.innerHTML=("Invalid case...!");
+            }
+        }
+    </script>
+    
+</body>
+</html>
